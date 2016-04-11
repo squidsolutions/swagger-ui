@@ -36,7 +36,7 @@
       if (url && url.length > 1) {
         url = decodeURIComponent(url[1]);
       } else {
-        url = "http://petstore.swagger.io/v2/swagger.json";
+        url = "https://api.squidsolutions.com/release/v4.2/swagger.json";
       }
 
       hljs.configure({
@@ -54,7 +54,7 @@
         onComplete: function(swaggerApi, swaggerUi){
           if(typeof initOAuth == "function") {
             initOAuth({
-              clientId: "your-client-id",
+              clientId: "admin_console",
               clientSecret: "your-client-secret-if-required",
               realm: "your-realms",
               appName: "your-app-name",
